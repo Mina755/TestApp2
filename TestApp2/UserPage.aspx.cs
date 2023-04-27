@@ -28,23 +28,7 @@ namespace TestApp2
 
         protected void ButtonExcelDownload_Click(object sender, EventArgs e)
         {
-
             Response.Write("<script>window.open('Download.aspx','_blank'); window.focus();</script>");
-            /*
-            string myurl = "https://localhost:44362/Download";//https://localhost:44362/Download Request.Url.AbsoluteUri
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(myurl);
-            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-
-            //Получение всех заголовков HTTP-ответа
-            WebHeaderCollection headers = response.Headers;
-            */
-            //Отображение всех заголовков на странице
-            /*
-            foreach (string header in headers)
-            {
-                myLiteralControl.Text += header + ": " + headers[header] + "<br/>";
-            }
-            */
             
             string text = "Download complete";
 
